@@ -4,6 +4,10 @@ int main(){
     int idade;
     printf("digite sua idade: ");
     scanf("%d", &idade);
+    while(idade <0){
+        printf("idade inválida, digite novamente: ");
+        scanf("%d", &idade);
+    }
     if(idade<12){
         printf("chora");
     }else if (idade<18){
